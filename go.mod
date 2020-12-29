@@ -1,4 +1,4 @@
-module github.com/cmccloud/gocmcapi
+module github.com/cmc-cloud/gocmcapi
 
 go 1.15
 

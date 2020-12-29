@@ -253,8 +253,10 @@ var LongTimeSettings = TimeSettings{Delay: 10, Interval: 20, Timeout: 20 * 60}
 // SuperLongTimeSettings predefined TimeSettings for long task
 var SuperLongTimeSettings = TimeSettings{Delay: 20, Interval: 20, Timeout: 5 * 60 * 60}
 
+// HalfDayTimeSettings for long task like take snapshot
 var HalfDayTimeSettings = TimeSettings{Delay: 60, Interval: 60, Timeout: 12 * 60 * 60}
 
+// OneDayTimeSettings for long task like take snapshot
 var OneDayTimeSettings = TimeSettings{Delay: 60, Interval: 60, Timeout: 24 * 60 * 60}
 
 func (c *Client) waitForTaskFinished(taskID string, timeSettings TimeSettings) (TaskStatus, error) {

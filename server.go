@@ -156,19 +156,4 @@ func (s *server) GetConsoleURL(id string) (string, error) {
 // Create a new server
 func (s *server) Create(params map[string]interface{}) (OrderResponse, TaskStatus, error) {
 	return s.client.Order("server/create", "", params, LongTimeSettings)
-	/*jsonStr, err := s.client.Post("server/deploy", params)
-	var response OrderResponse
-	if err == nil {
-		json.Unmarshal([]byte(jsonStr), &response)
-	}
-	return response, err*/
 }
-
-/*
-func (s *server) Create(params map[string]interface{}) (map[string]interface{}, error) {
-	jsonStr, err := s.client.Post("server/deploy", params)
-	jsonMap := make(map[string]interface{})
-	json.Unmarshal([]byte(jsonStr), &jsonMap)
-	return jsonMap, err
-}
-*/
