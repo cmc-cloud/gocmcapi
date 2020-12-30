@@ -69,7 +69,6 @@ func NewClient(apikey string) (*Client, error) {
 		apiURL: defaultAPIURL,
 		apiKey: apikey,
 	}
-	c.Image = &image{client: c}
 	c.Server = &server{client: c}
 	c.Task = &task{client: c}
 	c.Volume = &volume{client: c}
