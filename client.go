@@ -37,7 +37,6 @@ type OrderResponse struct {
 type Client struct {
 	apiURL         string
 	apiKey         string
-	Image          ImageService
 	Server         ServerService
 	Task           TaskService
 	Volume         VolumeService
